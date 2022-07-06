@@ -43,7 +43,7 @@ p {
 }
 
 a,
-input[type="submit"] {
+.donation-submit {
   padding: 16px 21px;
   background-color: #ff5959;
   color: white;
@@ -90,8 +90,9 @@ input[type="submit"] {
   margin: 20px 0 30px;
 }
 
+#donate-today > p,
 #our-donate-plan > p,
-#donate-today > p {
+#get-updates > p {
   width: 50%;
   margin: 20px auto 50px;
   color: #707070;
@@ -157,6 +158,7 @@ input[type="submit"] {
   margin: 0 auto;
   font-weight: 600;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .donate-plans {
@@ -183,4 +185,102 @@ input[type="submit"] {
 
 .donate-plan-heading {
   margin: 30px 0 15px;
+  color: #121212;
+}
+
+.donate-plan-description {
+  color: #707070;
+}
+
+#what-we-did {
+  background-image: url(images/what-we-did-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+#what-we-did h1 {
+  text-transform: capitalize;
+  font-size: 60px;
+  width: 600px;
+  color: white;
+}
+
+.activities {
+  margin-top: 35px;
+  width: 600px;
+  gap: 45px;
+}
+
+.activity {
+  width: 28%;
+}
+
+.activity h3 {
+  background-image: url(icons/icon-heart.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  color: white;
+  line-height: 2;
+}
+
+.activity h4 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.subscription-area {
+  justify-content: center;
+  align-items: center;
+  background-color: #fff4d6;
+  font-weight: 700;
+  width: 55%;
+  height: 200px;
+}
+
+.email-field {
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  padding: 14px 17px;
+}
+
+.email-field::placeholder {
+  color: #aa9f9f;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.email-submit {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background-color: #ff5959;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  font-size: 16px;
+  padding: 10.5px 25px;
+  margin-left: -5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #0b0d17;
+  padding: 45px 0;
+}
+
+footer h2 {
+  font-family: "Lobster", cursive;
+  color: #ff5959;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+footer p {
+  color: #d9dbe1;
+  font-size: 14px;
 }
