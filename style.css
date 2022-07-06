@@ -14,6 +14,7 @@ section {
 
 h1,
 h2,
+h4,
 a {
   font-family: "Rubik", sans-serif;
 }
@@ -39,7 +40,8 @@ p {
   color: #121212;
 }
 
-a {
+a,
+input[type="submit"] {
   padding: 16px 21px;
   background-color: #ff5959;
   color: white;
@@ -86,7 +88,69 @@ a {
   margin: 20px 0 30px;
 }
 
-#donate-today p {
+#donate-today > p {
   width: 50%;
   margin: 20px auto 50px;
+}
+
+.donation {
+  flex-direction: column;
+}
+
+.donate-amount {
+  width: 55%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 20px;
+}
+
+.amount {
+  background-color: #fafafa;
+  border-radius: 5px;
+  width: 125px;
+  height: 135px;
+  line-height: 135px;
+  font-size: 28px;
+  color: #707070;
+}
+
+.amount .active {
+  background-color: #ffeeee;
+  border: 2px solid #ff5959;
+  border-radius: 5px;
+  color: #ff5959;
+}
+
+.other-donation {
+  margin: 0 auto;
+}
+
+.other-donation {
+  margin-top: 60px;
+}
+
+.other-amount {
+  font-family: "Poppins", sans-serif;
+  line-height: 3;
+  font-size: 18px;
+  text-align: center;
+  width: 700px;
+  border: none;
+  border-bottom: 1px dotted gray;
+  margin-bottom: 20px;
+}
+
+.other-amount::placeholder {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 18px;
+}
+
+.donation-submit {
+  display: block;
+  border: none;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 20px;
 }
